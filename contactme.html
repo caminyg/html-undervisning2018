@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact me</title>
+<style>
+	/* Form styles */
+	form {
+		width: 40vw;
+		margin: 20px auto;
+		border: 1px solid black;
+		padding: 20px;
+	}
+	
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Contact me!</h1>
+</header>
+<!-- Navigation -->
+	
+	<nav>
+		<a href="#" target="_self">Home</a>
+		<a href="hello-world.html" target="_self">Hello World</a>
+		<a href="theanimaltable.html" target="_self">The Animal Table</a>
+		<a href="https://www.cphbusiness.dk" target="_blank">School</a>
+		<a href="#" target="_self">Contact me</a>
+	</nav>
+	
+<!-- webform -->
+<form action="mailto:cph-ct123@cphbusiness.dk?subject=Contact%20via%20form" method="post" enctype="text/plain">
+  <p>
+    <label>Your Name:</label>
+  </p>
+  <p>
+    <input type="text" name="name" placeholder="Type your name.." autofocus required>
+  </p>
+  <p>
+    <label>Your Email:</label>
+  </p>
+  <p>
+    <input type="email" name="email" placeholder="Type a valid mail address.." required>
+  </p>
+  <p>
+    <label>Your Message:</label>
+  </p>
+  <p><textarea name="comment" placeholder="Your message..."></textarea></p>
+  <hr>
+  <p>I love it<input type="radio" name="love" value="yes" checked></p>
+  <p>I hate it<input type="radio" name="love" value="no"></p>
+  <hr>
+  <p>I want to receive spam<input type="checkbox" name="spam" value="yes" checked></p>
+  
+  <input type="submit" value="Submit Form">
+</form>
+</body>
+</html>
