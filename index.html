@@ -6,29 +6,69 @@
 <meta name="description" content="Introduction to HTML">
 <meta name="keywords" content="HTML,HTML5, Tim Berners-Lee, semantic">
 <title>What is HTML 5?</title>
+	<style>
+/* layout */
+	
+#container {
+    width: 80%;
+    min-height: 90vh;
+    margin: auto;
+    border: 1px solid black;
+}
+	
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #DDD566;
+}
+	
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	background-color: #DDD566;
+}
+	
+#main {
+	background-color: #DDD566;
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+		
+#image {
+	max-width: 600px;
+}
+
+#footer {
+	padding: 10px;
+	background-color: #DDD566;
+}
+
+</style>
 </head>
 
 <body>
-<header>
+<div id="container">
+	<div id="header"><header>
   <h1>Introduction to HTML 5</h1>
-</header>
+</header></div>
 	
-	<nav>
+	<div id="nav"><nav>
 		<a href="#" target="_self">Home</a>
 		<a href="hello-world.html" target="_self">Hello World</a>
 		<a href="theanimaltable.html" target="_self">The Animal Table</a>
 		<a href="https://www.cphbusiness.dk" target="_blank">Studie</a>
 		<a href="contactme.html" target="_self">Contact me</a>
-	</nav>
+	</nav></div>
 	
-<section>
+	<div id="main"><section>
   <h2>What is HTML 5?</h2>
   <article>
     <h3>Tim Berners Lee &amp; the World Wide Web</h3>
     <p>HTML is the "mother tongue" of your browser. To make a long story short, HTML was invented in 1990 by a scientist called
       <mark>Tim Berners-Lee</mark>
       . The purpose was to make it easier for scientists at different universities to gain access to each other's research documents. The project became a bigger success than Tim Berners-Lee had ever imagined. By inventing HTML he laid the foundation for the web as we know it today.</p>
-	  	<figure> <img src="images/timbernerslee.jpg" alt="Portrait of Tim Berners-Lee">
+	  	<figure> <img id="image" src="images/timbernerslee.jpg" alt="Portrait of Tim Berners-Lee">
 		 <figcaption>Portrait of Tim Berners-Lee</figcaption>
 		</figure>
   </article>
@@ -41,7 +81,10 @@
     <h3>HTML: The foundation of all websites</h3>
     <p>HTML elements form the building blocks of all websites. HTML allows images and objects to be embedded and can be used to create interactive forms. It provides a means to create structured documents by denoting <em>structural semantics</em> for text such as headings, paragraphs, lists, links, quotes and other items. It can embed scripts in languages such as JavaScript which affect the behavior of HTML webpages.</p>
   </article>
-</section>
-<footer> <small>Copyright &copy; 2017 Classroom material. No rights reserved ;-).</small> </footer>
+</section></div>
+	
+	<div id="footer"><footer> <small>Copyright &copy; 2017 Classroom material. No rights reserved ;-).</small> </footer></div>
+</div>
+
 </body>
 </html>

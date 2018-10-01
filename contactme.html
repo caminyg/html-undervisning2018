@@ -4,56 +4,93 @@
 <meta charset="utf-8">
 <title>Contact me</title>
 <style>
-	/* Form styles */
-	form {
-		width: 40vw;
-		margin: 20px auto;
-		border: 1px solid black;
-		padding: 20px;
-	}
+/* layout */
 	
+#container {
+    width: 80%;
+    min-height: 90vh;
+    margin: auto;
+    border: 1px solid black;
+}
+	
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #DDD566;
+}
+	
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	background-color: #DDD566;
+}
+	
+#main {
+	background-color: #DDD566;
+	padding: 10px;
+}
+/* Form styles */
+form {
+    width: 40vw;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 20px;
+}
 </style>
 </head>
 
 <body>
-<header>
-  <h1>Contact me!</h1>
-</header>
-<!-- Navigation -->
+
+<!-- main layout container -->
+<div id="container">
 	
-	<nav>
-		<a href="index.html" target="_self">Home</a>
-		<a href="hello-world.html" target="_self">Hello World</a>
-		<a href="theanimaltable.html" target="_self">The Animal Table</a>
-		<a href="https://www.cphbusiness.dk" target="_blank">School</a>
-		<a href="#" target="_self">Contact me</a>
-	</nav>
+  <div id="header">
+    <header>
+      <h1>Contact me!</h1>
+    </header>
+  </div>
 	
-<!-- webform -->
-<form action="mailto:cph-ct123@cphbusiness.dk?subject=Contact%20via%20form" method="post" enctype="text/plain">
-  <p>
-    <label>Your Name:</label>
-  </p>
-  <p>
-    <input type="text" name="name" placeholder="Type your name.." autofocus required>
-  </p>
-  <p>
-    <label>Your Email:</label>
-  </p>
-  <p>
-    <input type="email" name="email" placeholder="Type a valid mail address.." required>
-  </p>
-  <p>
-    <label>Your Message:</label>
-  </p>
-  <p><textarea name="comment" placeholder="Your message..."></textarea></p>
-  <hr>
-  <p>I love it<input type="radio" name="love" value="yes" checked></p>
-  <p>I hate it<input type="radio" name="love" value="no"></p>
-  <hr>
-  <p>I want to receive spam<input type="checkbox" name="spam" value="yes" checked></p>
-  
-  <input type="submit" value="Submit Form">
-</form>
+  <div id="nav">
+    <nav> <a href="index.html" target="_self">Home</a> <a href="hello-world.html" target="_self">Hello World</a> <a href="theanimaltable.html" target="_self">The Animal Table</a> <a href="https://www.cphbusiness.dk" target="_blank">School</a> <a href="#" target="_self">Contact me</a> </nav>
+  </div>
+  <div id="main">
+    <form action="mailto:cph-ct123@cphbusiness.dk?subject=Contact%20via%20form" method="post" enctype="text/plain">
+      <p>
+        <label>Your Name:</label>
+      </p>
+      <p>
+        <input type="text" name="name" placeholder="Type your name.." autofocus required>
+      </p>
+      <p>
+        <label>Your Email:</label>
+      </p>
+      <p>
+        <input type="email" name="email" placeholder="Type a valid mail address.." required>
+      </p>
+      <p>
+        <label>Your Message:</label>
+      </p>
+      <p>
+        <textarea name="comment" placeholder="Your message..."></textarea>
+      </p>
+      <hr>
+      <p>I love it
+        <input type="radio" name="love" value="yes" checked>
+      </p>
+      <p>I hate it
+        <input type="radio" name="love" value="no">
+      </p>
+      <hr>
+      <p>I want to receive spam
+        <input type="checkbox" name="spam" value="yes" checked>
+      </p>
+      <input type="submit" value="Submit Form">
+    </form>
+  </div>
+	
+  <div id="footer"></div>
+	
+</div>
 </body>
 </html>
